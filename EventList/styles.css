@@ -5,12 +5,15 @@ body {
     width: 80%;
     margin: 0 auto;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .add-btn {
+    margin: auto;
     display: inline-block;
     margin-bottom: 10px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #008cba;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -24,28 +27,51 @@ table {
     border-collapse: collapse;
     margin-top: 10px;
 }
+
+
 th, td {
     padding: 15px;
     text-align: left;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
 }
 th {
     background-color: #f4f4f4;
     font-size: 1.1em;
 }
+
+
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #e6e2d3;
 }
+
 .actions button {
-    background: none;
+    /* background: none; */
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.edit, .save-changes{
+    background: #008cba;
+}  
+
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .actions .edit, .add{
     color: #007bff;
+    font-size: 1.5rem;
 }
 .actions .delete, .cancel{
     color: #dc3545;
+    font-size: 1.5rem;
+}
+
+.actions .save-changes{
+    font-size: 1.5rem;
 }
 
 .actions button:hover {
